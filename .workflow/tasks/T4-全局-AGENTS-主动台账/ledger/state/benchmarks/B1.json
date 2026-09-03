@@ -1,9 +1,0 @@
-{
-  "id": "B1",
-  "title": "全局主动台账入口",
-  "reference": "ledger/benchmarks/B1.md",
-  "phase": "obsolete",
-  "hold": null,
-  "contractDigest": "6d58d4bd6956d716b2e3f592cd8faf1b0daa7e67ee4bf0f1589774f1a89c111e",
-  "verificationStatus": null
-}

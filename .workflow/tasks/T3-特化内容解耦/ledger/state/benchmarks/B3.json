@@ -1,9 +1,0 @@
-{
-  "id": "B3",
-  "title": "Agent 场景与交付一致性",
-  "reference": "ledger/benchmarks/B3.md",
-  "phase": "accepted",
-  "hold": null,
-  "contractDigest": "0bcdc9e69091ee92b3740811ce437e57065d5db440cd6e6c5f48c03bd53dd175",
-  "verificationStatus": "valid"
-}

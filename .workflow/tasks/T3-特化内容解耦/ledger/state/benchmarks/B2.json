@@ -1,9 +1,0 @@
-{
-  "id": "B2",
-  "title": "v2 到 v3 安全迁移",
-  "reference": "ledger/benchmarks/B2.md",
-  "phase": "accepted",
-  "hold": null,
-  "contractDigest": "6b44a118b0ab66c3790ae532cf53891ac1e74af84259fe2055bfef707403991a",
-  "verificationStatus": "valid"
-}

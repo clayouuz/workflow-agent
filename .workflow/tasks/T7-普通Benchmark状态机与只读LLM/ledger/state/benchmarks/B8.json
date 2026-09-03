@@ -1,9 +1,0 @@
-{
-  "id": "B8",
-  "title": "v8 普通状态机与只读投影",
-  "reference": "ledger/benchmarks/B8.md",
-  "phase": "accepted",
-  "hold": null,
-  "contractDigest": "531bcbf18fc332bd3cebb671f69b60fc3a8a59fea086d2f0c58c079ad0b9421b",
-  "verificationStatus": "valid"
-}

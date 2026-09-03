@@ -1,9 +1,0 @@
-{
-  "id": "B2",
-  "title": "v4 迁移与兼容交付",
-  "reference": "ledger/benchmarks/B2.md",
-  "phase": "ready",
-  "hold": null,
-  "contractDigest": "56b23ffb714dc1d6153721ec8c1ccf245217f8de846cfb7f24500e33be5fe790",
-  "verificationStatus": null
-}
