@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "mode": "managed",
+  "complexityReason": "本任务跨 CLI、模板、迁移、测试和文档，LLM 判断为复杂",
+  "phase": "execution_permitted",
+  "combined": {
+    "reference": "ledger/designs/T8-discussion.md",
+    "digest": "9f350c67edc342f5a097a8b47437093ce2b8572297e2be9ca1fa6b878b37d30b",
+    "confirmation": "用户确认 T8 目标、具体方案和验收方式",
+    "confirmedDigest": "9f350c67edc342f5a097a8b47437093ce2b8572297e2be9ca1fa6b878b37d30b"
+  }
+}

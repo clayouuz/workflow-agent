@@ -1,0 +1,11 @@
+{
+  "id": "B1-S3",
+  "title": "补充固定 Agent 行为场景并检查提示词边界",
+  "reference": "ledger/work-items/B1-S3.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "aabbf4caf4b33c0ee10a298bc6fee14748ca263232ad055dbc1f5f24a5ff98d6",
+  "benchmarks": [
+    "B1"
+  ]
+}

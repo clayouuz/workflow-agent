@@ -1,0 +1,11 @@
+{
+  "id": "B2-S3",
+  "title": "执行迁移、影响测试、全量测试和交付检查",
+  "reference": "ledger/work-items/B2-S3.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "4c7188a5e252ad7c4f1924693b7d91e74bc781bb1b037ff038f47f925e96524a",
+  "benchmarks": [
+    "B2"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "B4-S2",
+  "title": "实现结构版本与模板指纹",
+  "reference": "ledger/work-items/B4-S2.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "3b180d7d662441e50b275574d342912d6950858d24220561bd7a675c34d33cf9",
+  "benchmarks": [
+    "B4"
+  ]
+}

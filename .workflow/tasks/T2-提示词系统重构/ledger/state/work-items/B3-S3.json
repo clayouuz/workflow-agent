@@ -1,0 +1,11 @@
+{
+  "id": "B3-S3",
+  "title": "实现验收项覆盖、人工结果与 accept 检查",
+  "reference": "ledger/work-items/B3-S3.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "61f0eb4b97c3493faf48fbe7f35e8dbece1719f32f96c216208f7047eb41ef8c",
+  "benchmarks": [
+    "B3"
+  ]
+}

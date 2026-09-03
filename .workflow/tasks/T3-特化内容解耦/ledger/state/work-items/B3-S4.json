@@ -1,0 +1,11 @@
+{
+  "id": "B3-S4",
+  "title": "提供两组人工场景的自测流程并记录用户结果",
+  "reference": "ledger/work-items/B3-S4.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "61a3327914bde2a7c246af10b8fcb3e5f31012ccb1322f61df036b250af01f72",
+  "benchmarks": [
+    "B3"
+  ]
+}

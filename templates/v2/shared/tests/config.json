@@ -1,0 +1,6 @@
+{
+  "sourceRoots": [],
+  "testRoots": [],
+  "exclude": [".d.ts", "node_modules"]
+}
+

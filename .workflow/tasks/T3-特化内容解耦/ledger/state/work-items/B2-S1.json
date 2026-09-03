@@ -1,0 +1,11 @@
+{
+  "id": "B2-S1",
+  "title": "先编写官方、自定义、继承、幂等和回滚的黑盒迁移测试",
+  "reference": "ledger/work-items/B2-S1.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "27971f3b3b0916bb4226035a9a313161e961d5ccdcd871370f1091d32442e003",
+  "benchmarks": [
+    "B2"
+  ]
+}

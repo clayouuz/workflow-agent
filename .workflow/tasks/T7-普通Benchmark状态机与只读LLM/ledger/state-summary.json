@@ -1,0 +1,70 @@
+{
+  "benchmarks": [
+    {
+      "id": "B8",
+      "title": "v8 普通状态机与只读投影",
+      "reference": "ledger/benchmarks/B8.md",
+      "phase": "accepted",
+      "hold": null,
+      "contractDigest": "531bcbf18fc332bd3cebb671f69b60fc3a8a59fea086d2f0c58c079ad0b9421b",
+      "verificationStatus": "valid"
+    }
+  ],
+  "workItems": [
+    {
+      "id": "B8-S1",
+      "title": "编写状态机、drift、事件重建和迁移失败测试",
+      "reference": "ledger/work-items/B8-S1.md",
+      "phase": "done",
+      "hold": null,
+      "documentDigest": "9eef13a8ad51d4ae49ba9e61b35f0586234997c74ca59d91e8df51663a8a661f",
+      "benchmarks": [
+        "B8"
+      ]
+    },
+    {
+      "id": "B8-S2",
+      "title": "实现状态 Core、CLI 与只读投影",
+      "reference": "ledger/work-items/B8-S2.md",
+      "phase": "done",
+      "hold": null,
+      "documentDigest": "ac718f4d1659ae985d11b77ff73f658131fbcaee2d379f260774bcd71cd0eb0b",
+      "benchmarks": [
+        "B8"
+      ]
+    },
+    {
+      "id": "B8-S3",
+      "title": "实现 v8 模板、迁移和兼容入口",
+      "reference": "ledger/work-items/B8-S3.md",
+      "phase": "done",
+      "hold": null,
+      "documentDigest": "78cd798633ad1568794a900f68526fe32e62d7302207a70d107e7bb494f780ab",
+      "benchmarks": [
+        "B8"
+      ]
+    },
+    {
+      "id": "B8-S4",
+      "title": "精简 SKILL、同步规则和文档",
+      "reference": "ledger/work-items/B8-S4.md",
+      "phase": "done",
+      "hold": null,
+      "documentDigest": "673b97b81c5bff192731a2fabec0ff72828e9f11adb554826089d73893004742",
+      "benchmarks": [
+        "B8"
+      ]
+    },
+    {
+      "id": "B8-S5",
+      "title": "执行完整验证和真实工作区迁移",
+      "reference": "ledger/work-items/B8-S5.md",
+      "phase": "done",
+      "hold": null,
+      "documentDigest": "0839553b8d041f1dcc5552c582c29e494dcba95cdadefc01076ac3ffc3f19a7f",
+      "benchmarks": [
+        "B8"
+      ]
+    }
+  ]
+}

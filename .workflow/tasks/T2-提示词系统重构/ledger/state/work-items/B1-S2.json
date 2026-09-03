@@ -1,0 +1,11 @@
+{
+  "id": "B1-S2",
+  "title": "实现 step 挂起/恢复和 current 投影",
+  "reference": "ledger/work-items/B1-S2.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "13f4fe000fe19ed7d7c1bb0ec7517548f746e12a7c2c2fe935ff02e308d9b9c2",
+  "benchmarks": [
+    "B1"
+  ]
+}

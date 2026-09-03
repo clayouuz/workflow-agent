@@ -1,0 +1,11 @@
+{
+  "id": "B3-S2",
+  "title": "同步 CLI 帮助、README、命令文档、HANDOFF 与 CHANGELOG",
+  "reference": "ledger/work-items/B3-S2.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "a5fb44a0ec88194b632675a946514e8f024dd3a77f1dbf279d6e09351b3c8abe",
+  "benchmarks": [
+    "B3"
+  ]
+}

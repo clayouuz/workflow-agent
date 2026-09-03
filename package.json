@@ -1,0 +1,20 @@
+{
+  "name": "workflow-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "为 Agent 会话装配精确、精简、可恢复的项目上下文",
+  "scripts": {
+    "ledger": "node src/cli.ts ledger",
+    "heuristics": "node src/cli.ts heuristics",
+    "tool": "node src/cli.ts tool",
+    "test": "node src/cli.ts test run",
+    "status": "node src/cli.ts ledger status"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "typescript": "^5.6.3"
+  }
+}

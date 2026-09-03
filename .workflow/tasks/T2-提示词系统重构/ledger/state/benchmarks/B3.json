@@ -1,0 +1,9 @@
+{
+  "id": "B3",
+  "title": "验证证据与验收闭环",
+  "reference": "ledger/benchmarks/B3.md",
+  "phase": "accepted",
+  "hold": null,
+  "contractDigest": "09e50116aa6fd7a9715f05dc0c437f19309aeeb151e91f215e450042fe9ba73d",
+  "verificationStatus": "valid"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "B0",
+  "title": "示例模块",
+  "reference": "ledger/benchmarks/B0.md",
+  "phase": "draft",
+  "hold": null,
+  "contractDigest": "b601dd17bf7f52509dd400e7d747b1d5f859fa332aaef8297d513dafd164f2c0",
+  "verificationStatus": null
+}

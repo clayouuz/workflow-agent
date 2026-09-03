@@ -1,0 +1,11 @@
+{
+  "id": "B1-S4",
+  "title": "补充白盒测试并验证",
+  "reference": "ledger/work-items/B1-S4.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "86f1995229db19da311ec007a05b1dcdf98ee72439f5feef4d221b2afbbdd416",
+  "benchmarks": [
+    "B1"
+  ]
+}

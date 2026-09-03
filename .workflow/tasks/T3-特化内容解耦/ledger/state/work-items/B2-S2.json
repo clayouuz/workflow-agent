@@ -1,0 +1,11 @@
+{
+  "id": "B2-S2",
+  "title": "实现多版本模板识别与 Cocos 特化迁移策略",
+  "reference": "ledger/work-items/B2-S2.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "1df13da1cc4683f720c2d6f118e987a7c775773047207c3c0917f04dd61d555d",
+  "benchmarks": [
+    "B2"
+  ]
+}

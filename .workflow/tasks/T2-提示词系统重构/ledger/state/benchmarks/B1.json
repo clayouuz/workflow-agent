@@ -1,0 +1,9 @@
+{
+  "id": "B1",
+  "title": "核心台账与工作状态",
+  "reference": "ledger/benchmarks/B1.md",
+  "phase": "verifying",
+  "hold": null,
+  "contractDigest": "f04f844b25d6b2822831bcd1dc549cd46e84d5c1978794cda92ae67568263e18",
+  "verificationStatus": null
+}

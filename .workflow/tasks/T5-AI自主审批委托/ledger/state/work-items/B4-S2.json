@@ -1,0 +1,11 @@
+{
+  "id": "B4-S2",
+  "title": "实现状态机、CLI、v6 模板和迁移",
+  "reference": "ledger/work-items/B4-S2.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "150313ad3e69f63f5da216deb5ad9e83b8c9a7de25522d0157b9f04fd6545601",
+  "benchmarks": [
+    "B4"
+  ]
+}

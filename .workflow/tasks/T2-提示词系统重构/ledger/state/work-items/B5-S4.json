@@ -1,0 +1,11 @@
+{
+  "id": "B5-S4",
+  "title": "同步文档、CHANGELOG 与最终验收",
+  "reference": "ledger/work-items/B5-S4.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "6cf48178c2eb768f702469e27aad3c36fffb43d4a9e1d7e416d0897c67899ad2",
+  "benchmarks": [
+    "B5"
+  ]
+}

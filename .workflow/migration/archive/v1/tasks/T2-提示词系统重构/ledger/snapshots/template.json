@@ -1,0 +1,15 @@
+{
+  "benchmarkId": "B1",
+  "compiledAt": "2026-08-05",
+  "stillBinding": [
+    "示例：配置文件统一使用JSON，UTF-8无BOM"
+  ],
+  "superseded": [
+    { "old": "示例旧决策", "replacedBy": "示例新决策" }
+  ],
+  "contextualArchived": 0,
+  "sourceEvents": {
+    "historyFile": "history/B1.md",
+    "archive": "history/archive/B1-2026-08-05-123456.md"
+  }
+}

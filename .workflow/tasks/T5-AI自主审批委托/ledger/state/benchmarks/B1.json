@@ -1,0 +1,9 @@
+{
+  "id": "B1",
+  "title": "可选审批委托上下文",
+  "reference": "ledger/benchmarks/B1.md",
+  "phase": "ready",
+  "hold": null,
+  "contractDigest": "cc965a9ba578f8dc067463bbf6bb8579d13b547c244094689e9e1db51e22c822",
+  "verificationStatus": null
+}

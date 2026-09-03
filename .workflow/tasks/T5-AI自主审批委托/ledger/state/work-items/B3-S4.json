@@ -1,0 +1,11 @@
+{
+  "id": "B3-S4",
+  "title": "运行影响测试、全量测试和交付验证",
+  "reference": "ledger/work-items/B3-S4.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "ad997793c0176173552a3a7ded292fb09e39cf73f602761102b6a3c07ef14ebc",
+  "benchmarks": [
+    "B3"
+  ]
+}

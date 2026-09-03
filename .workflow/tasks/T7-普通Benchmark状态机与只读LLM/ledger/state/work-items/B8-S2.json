@@ -1,0 +1,11 @@
+{
+  "id": "B8-S2",
+  "title": "实现状态 Core、CLI 与只读投影",
+  "reference": "ledger/work-items/B8-S2.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "ac718f4d1659ae985d11b77ff73f658131fbcaee2d379f260774bcd71cd0eb0b",
+  "benchmarks": [
+    "B8"
+  ]
+}

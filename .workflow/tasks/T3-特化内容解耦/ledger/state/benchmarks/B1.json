@@ -1,0 +1,9 @@
+{
+  "id": "B1",
+  "title": "任务级特化包",
+  "reference": "ledger/benchmarks/B1.md",
+  "phase": "accepted",
+  "hold": null,
+  "contractDigest": "b21e6ddf98aa6cb9e3c0da70294408af919ef8cb5cf80cbbfca0aed0148bf3fb",
+  "verificationStatus": "valid"
+}

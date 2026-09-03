@@ -1,0 +1,9 @@
+{
+  "id": "B5",
+  "title": "集成回归与文档收尾",
+  "reference": "ledger/benchmarks/B5.md",
+  "phase": "accepted",
+  "hold": null,
+  "contractDigest": "cd8d644a37ebdc36d9321cfc9fae9fd40a01ba2ad1dc92d3dd17b39f3a0e6856",
+  "verificationStatus": "valid"
+}

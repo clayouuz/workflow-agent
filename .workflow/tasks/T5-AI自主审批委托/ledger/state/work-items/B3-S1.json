@@ -1,0 +1,11 @@
+{
+  "id": "B3-S1",
+  "title": "先编写旧实现下失败的边界讨论黑盒测试",
+  "reference": "ledger/work-items/B3-S1.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "272e54d7eeeb8a10166746c3ad51db76c2b909a76a1af6a885d2ef64247beb65",
+  "benchmarks": [
+    "B3"
+  ]
+}

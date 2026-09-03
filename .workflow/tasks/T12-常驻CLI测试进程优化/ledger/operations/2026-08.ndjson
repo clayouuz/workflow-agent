@@ -1,0 +1,6 @@
+{"version":1,"timestamp":"2026-08-31T01:59:24.738Z","taskId":"T12-常驻CLI测试进程优化","actor":"user","type":"correction","subject":"workflow-review","summary":"用户指出 HANDOFF.md 已废弃，不应作为当前项目规范或现状依据","artifacts":[]}
+{"version":1,"timestamp":"2026-08-31T02:00:45.829Z","taskId":"T12-常驻CLI测试进程优化","actor":"user","type":"requirement","subject":"workflow-load","summary":"用户要求讨论状态进入 ledger load 范围，并明确其他校验保持轻量以避免限制 LLM","artifacts":[]}
+{"version":1,"timestamp":"2026-08-31T02:03:39.538Z","taskId":"T12-常驻CLI测试进程优化","actor":"ai","type":"verification","subject":"workflow-load","summary":"已将讨论状态和设计引用纳入默认 ledger load，并修复 project/repair 覆盖讨论入口；全量测试 92/92、影响测试 56/56 通过","artifacts":[]}
+{"version":1,"timestamp":"2026-08-31T02:05:37.299Z","taskId":"T12-常驻CLI测试进程优化","actor":"user","type":"request","subject":"readme","summary":"用户要求编写项目 README，整理功能、工作流、目录和验证入口","artifacts":[]}
+{"version":1,"timestamp":"2026-08-31T02:14:21.280Z","taskId":"T12-常驻CLI测试进程优化","actor":"user","type":"request","subject":"readme","summary":"用户要求补全 README 为完整功能说明、减少细节，并将快速开始改为让 LLM 基于项目 SKILL.md 注册使用 workflow-agent 的 Skill","artifacts":[]}
+{"version":1,"timestamp":"2026-08-31T02:16:24.598Z","taskId":"T12-常驻CLI测试进程优化","actor":"ai","type":"verification","subject":"readme","summary":"README 已按用户要求改为面向用户的完整功能说明，并补充所有模块与 Skill 注册式快速开始；自测 92/92 通过","artifacts":[]}

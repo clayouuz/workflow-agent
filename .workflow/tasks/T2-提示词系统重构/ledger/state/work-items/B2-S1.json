@@ -1,0 +1,11 @@
+{
+  "id": "B2-S1",
+  "title": "编写模板与上下文装配黑盒测试",
+  "reference": "ledger/work-items/B2-S1.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "90c1a7f41cb12a3113deba5dda77a78f9e61ba4c9bb17ca80b8b2477e2c3a0ce",
+  "benchmarks": [
+    "B2"
+  ]
+}

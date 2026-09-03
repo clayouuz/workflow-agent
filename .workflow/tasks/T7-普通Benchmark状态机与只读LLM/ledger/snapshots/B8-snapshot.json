@@ -1,0 +1,22 @@
+{
+  "benchmarkId": "B8",
+  "stillBinding": [
+    "普通 Benchmark 和 Work Item 通过语义命令状态机推进，不能自由 transition 到 accepted",
+    "Benchmark Contract、Work Item、Authority 和 Design 可直接编辑，机器状态、Verification、Machine Event 和投影由 CLI 独占",
+    "Machine Event 是 append-only 状态权威，State 和投影可由 ledger repair 重建",
+    "语义文档指纹变化会产生 drift 并阻止沿用旧状态或验证",
+    "SKILL 只保留入口、写入边界、按需路由和验证诚信"
+  ],
+  "superseded": [
+    {
+      "old": "自由 ledger transition 与 benchmarks.md 内混合 Step/状态",
+      "replacedBy": "Benchmark/Work Item 状态机、独立语义文档和只读投影"
+    }
+  ],
+  "contextualArchived": 1,
+  "compiledAt": "2026-08-28",
+  "sourceEvents": {
+    "historyFile": "history/B8.md",
+    "archive": null
+  }
+}

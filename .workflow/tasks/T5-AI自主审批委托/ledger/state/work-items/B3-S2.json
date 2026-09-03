@@ -1,0 +1,11 @@
+{
+  "id": "B3-S2",
+  "title": "发布新版可选委托规则和入口提示",
+  "reference": "ledger/work-items/B3-S2.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "392bb6bcd770abb640e75737c807882261866836a7b08cd2c82a2662fa46c9a8",
+  "benchmarks": [
+    "B3"
+  ]
+}

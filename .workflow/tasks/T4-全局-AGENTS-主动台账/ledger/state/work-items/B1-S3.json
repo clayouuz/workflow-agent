@@ -1,0 +1,11 @@
+{
+  "id": "B1-S3",
+  "title": "提供新会话人工验证流程并记录结果",
+  "reference": "ledger/work-items/B1-S3.md",
+  "phase": "pending",
+  "hold": null,
+  "documentDigest": "822b187542ba203066e9fa1f4f20d52d5a2b0b3efd35063383e4e8cf0ee3e01d",
+  "benchmarks": [
+    "B1"
+  ]
+}

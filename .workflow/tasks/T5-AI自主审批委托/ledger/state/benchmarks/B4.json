@@ -1,0 +1,9 @@
+{
+  "id": "B4",
+  "title": "委托讨论状态机",
+  "reference": "ledger/benchmarks/B4.md",
+  "phase": "ready",
+  "hold": null,
+  "contractDigest": "39deae8efaacbb398d6aed54e9ade037b43ed0b75bd531f34f8d913d83cd5e74",
+  "verificationStatus": null
+}

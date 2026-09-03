@@ -1,0 +1,2 @@
+{"version":1,"timestamp":"2026-08-29T06:44:28.666Z","taskId":"T10-路径可移植化","actor":"user","type":"request","subject":"T10","summary":"用户要求 Operation Log 只增加 actor 字段区分 user 和 ai，并确认兼容方案","artifacts":[]}
+{"version":1,"timestamp":"2026-08-29T06:44:28.785Z","taskId":"T10-路径可移植化","actor":"ai","type":"verification","subject":"T10","summary":"完成 actor 字段、CLI 筛选、旧日志兼容和 v10 迁移；全量测试 88/88 通过","artifacts":[]}

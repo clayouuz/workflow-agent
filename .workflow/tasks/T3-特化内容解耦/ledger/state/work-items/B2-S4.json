@@ -1,0 +1,11 @@
+{
+  "id": "B2-S4",
+  "title": "补充白盒测试并检查恢复路径",
+  "reference": "ledger/work-items/B2-S4.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "b5791fcee46054ca59c4d1a3d4baa8d3751c006dcdc8576b537b18042724e78a",
+  "benchmarks": [
+    "B2"
+  ]
+}

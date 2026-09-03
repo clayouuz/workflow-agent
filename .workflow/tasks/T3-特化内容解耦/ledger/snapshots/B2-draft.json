@@ -1,0 +1,10 @@
+{
+  "benchmarkId": "B2",
+  "stillBinding": [
+    "当前工作区结构版本为 v3，v1 和 v2 模板保持不可变基线",
+    "旧官方 Cocos 模板进入可恢复归档，自定义内容原样保留",
+    "迁移继承既有 candidates、archives 和显式 taskPacks，并保持幂等与失败回滚"
+  ],
+  "superseded": [],
+  "contextualArchived": 0
+}

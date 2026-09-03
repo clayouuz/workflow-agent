@@ -1,0 +1,11 @@
+{
+  "id": "B3-S4",
+  "title": "补充白盒测试并验证失败路径",
+  "reference": "ledger/work-items/B3-S4.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "47066dbd3bdc582676f38c330235c8f11a691ead5eff8bbaf952d2322055b27d",
+  "benchmarks": [
+    "B3"
+  ]
+}

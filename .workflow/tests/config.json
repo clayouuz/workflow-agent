@@ -1,0 +1,12 @@
+{
+  "sourceRoots": [
+    "~/workflow-agent/src"
+  ],
+  "testRoots": [
+    "~/workflow-agent/tests"
+  ],
+  "exclude": [
+    ".d.ts",
+    "node_modules"
+  ]
+}

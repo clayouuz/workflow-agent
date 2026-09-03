@@ -1,0 +1,26 @@
+{
+  "benchmarkId": "B2",
+  "stillBinding": [
+    "SKILL.md 只作操作入口，workflow.md 定义协作边界，context.md 定义装配，strategy.md 只提供非强制启发",
+    "current.md 作为会话入口和上下文引用清单，支持文件#标题的精确段落装配",
+    "上下文 token 只做稳定近似估算与提醒，不压缩也不拒绝加载",
+    "通用设计模板不包含 Cocos 知识，Cocos 使用可独立加载的完整特化模板",
+    "knowledge 只保存路径与资源、文档入口和项目约定等跨任务精简事实"
+  ],
+  "superseded": [
+    {
+      "old": "discussion/rules.md 与 workflow.md 分别保存重复规则",
+      "replacedBy": "废弃 rules.md，必要边界合并到 workflow.md"
+    },
+    {
+      "old": "上下文使用整文件行数硬上限",
+      "replacedBy": "使用段落级加载与参考 token 估算"
+    }
+  ],
+  "contextualArchived": 4,
+  "compiledAt": "2026-08-20",
+  "sourceEvents": {
+    "historyFile": "history/B2.md",
+    "archive": "history/archive/B2-v001.md"
+  }
+}

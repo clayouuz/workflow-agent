@@ -1,0 +1,11 @@
+{
+  "id": "B3-S1",
+  "title": "编写证据、过期和验收失败路径黑盒测试",
+  "reference": "ledger/work-items/B3-S1.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "817948d224898be7e6140d4426a662ef3719bcb93cff05d24c6deffd2bd70b92",
+  "benchmarks": [
+    "B3"
+  ]
+}

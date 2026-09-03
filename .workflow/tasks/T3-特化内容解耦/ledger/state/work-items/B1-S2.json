@@ -1,0 +1,11 @@
+{
+  "id": "B1-S2",
+  "title": "建立 v3 核心模板、Cocos pack 注册及 schema 表达",
+  "reference": "ledger/work-items/B1-S2.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "abf4ee456af2f409517f09ccb7544b46906412bc0bd0062d10716ccfa51ba441",
+  "benchmarks": [
+    "B1"
+  ]
+}

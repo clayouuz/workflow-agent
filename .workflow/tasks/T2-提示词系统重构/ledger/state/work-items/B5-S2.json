@@ -1,0 +1,11 @@
+{
+  "id": "B5-S2",
+  "title": "执行完整自动测试和失败修复",
+  "reference": "ledger/work-items/B5-S2.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "f5e603eb5b50347a3008d025b12fc1788da76c7a66ce603dd4b47930763ba45d",
+  "benchmarks": [
+    "B5"
+  ]
+}

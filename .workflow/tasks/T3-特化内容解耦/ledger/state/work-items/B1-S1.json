@@ -1,0 +1,11 @@
+{
+  "id": "B1-S1",
+  "title": "先编写初始化、任务隔离、启用、撤销和失败路径的黑盒测试",
+  "reference": "ledger/work-items/B1-S1.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "32fb5c57566f8abdffbc7c60853404aeed4552fbe375ba0839c58d88b9f33ef4",
+  "benchmarks": [
+    "B1"
+  ]
+}

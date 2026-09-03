@@ -1,0 +1,9 @@
+{
+  "id": "B2",
+  "title": "提示词分层与精确上下文",
+  "reference": "ledger/benchmarks/B2.md",
+  "phase": "verifying",
+  "hold": null,
+  "contractDigest": "ae609d1cb92eacb52405b272703eb8a5006bc08a174127b7ae1b5b137e96f7a7",
+  "verificationStatus": null
+}

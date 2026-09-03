@@ -1,0 +1,11 @@
+{
+  "id": "B4-S1",
+  "title": "先编写并运行旧实现下失败的状态机黑盒测试",
+  "reference": "ledger/work-items/B4-S1.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "79ee8e6e21cbfbea2aa56e282f0d042e4e76d4891d444ce5cc8af4affb28bc1a",
+  "benchmarks": [
+    "B4"
+  ]
+}

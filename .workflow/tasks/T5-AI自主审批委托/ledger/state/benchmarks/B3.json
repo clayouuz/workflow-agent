@@ -1,0 +1,9 @@
+{
+  "id": "B3",
+  "title": "委托边界检查点",
+  "reference": "ledger/benchmarks/B3.md",
+  "phase": "ready",
+  "hold": null,
+  "contractDigest": "aab18ceb40fb9123cd9dbd98afeaaf7fd360a07f8c8cd7c11e60140502a9ebe5",
+  "verificationStatus": null
+}

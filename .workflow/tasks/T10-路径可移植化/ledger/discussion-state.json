@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "mode": "managed",
+  "complexityReason": "跨路径解析、配置序列化、文档、Skill 和多层验证，LLM 判断为复杂任务",
+  "phase": "execution_permitted",
+  "combined": {
+    "reference": "ledger/designs/path-portability.md",
+    "digest": "b3c0a685e2cffe25ce22c1629bef839f98e8b7d40d3e380add2c6317b0bd6651",
+    "confirmation": "确认",
+    "confirmedDigest": "b3c0a685e2cffe25ce22c1629bef839f98e8b7d40d3e380add2c6317b0bd6651"
+  }
+}

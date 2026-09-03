@@ -1,0 +1,11 @@
+{
+  "id": "B1-S1",
+  "title": "修改全局 `AGENTS.md`",
+  "reference": "ledger/work-items/B1-S1.md",
+  "phase": "pending",
+  "hold": null,
+  "documentDigest": "17ce064e2564e95c0c1c19280c671dd08b4e97f7888115ecf67688b3c667b38f",
+  "benchmarks": [
+    "B1"
+  ]
+}

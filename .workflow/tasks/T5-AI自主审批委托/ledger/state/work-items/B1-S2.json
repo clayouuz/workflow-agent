@@ -1,0 +1,11 @@
+{
+  "id": "B1-S2",
+  "title": "新增可选委托模板并更新 Agent 操作入口",
+  "reference": "ledger/work-items/B1-S2.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "2e160c7c5aeace37c55e0623a93e06175ebd7541db5c114e4475c0acd8b7f6de",
+  "benchmarks": [
+    "B1"
+  ]
+}

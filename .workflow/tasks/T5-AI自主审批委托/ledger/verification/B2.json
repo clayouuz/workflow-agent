@@ -1,0 +1,374 @@
+{
+  "benchmarkId": "B2",
+  "status": "incomplete",
+  "automatic": {
+    "run": {
+      "startedAt": "2026-08-21T07:15:24.927Z",
+      "completedAt": "2026-08-21T07:15:39.501Z",
+      "files": [
+        {
+          "file": "C:\\Users\\zhaoyan\\workflow-agent\\tests\\approval-delegation-t5.test.ts",
+          "cases": [
+            {
+              "name": "test_B1_A1_regular_task_excludes_delegated_approval_context",
+              "ok": true
+            },
+            {
+              "name": "test_B1_A2_delegated_reference_loads_only_for_bound_task",
+              "ok": true
+            },
+            {
+              "name": "test_B1_A3_new_task_does_not_inherit_delegation",
+              "ok": true
+            },
+            {
+              "name": "test_B2_A1_v3_migration_keeps_workflow_and_adds_optional_context",
+              "ok": true
+            },
+            {
+              "name": "test_B2_A2_v3_migration_preserves_authority_and_custom_workflow",
+              "ok": true
+            },
+            {
+              "name": "test_B2_A3_verify_script_covers_template_migration_changes",
+              "ok": true
+            },
+            {
+              "name": "test_B3_A1_rules_require_task_specific_delegation_boundary",
+              "ok": true
+            },
+            {
+              "name": "test_B3_A2_rules_distinguish_vague_and_explicit_delegation",
+              "ok": true
+            },
+            {
+              "name": "test_B3_A3_v4_custom_delegated_rules_are_preserved_with_v5_candidate",
+              "ok": true
+            },
+            {
+              "name": "test_B3_A3_v4_migration_preserves_delegated_task_state_and_reference",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "file": "C:\\Users\\zhaoyan\\workflow-agent\\tests\\context-b2.test.ts",
+          "cases": [
+            {
+              "name": "test_B2_A1_init_uses_layered_prompts_without_rules",
+              "ok": true
+            },
+            {
+              "name": "test_B2_A2_init_has_no_example_benchmark_or_smoke_test",
+              "ok": true
+            },
+            {
+              "name": "test_B2_A3_general_and_cocos_design_templates_are_independent",
+              "ok": true
+            },
+            {
+              "name": "test_B2_A4_context_reference_rejects_workspace_escape",
+              "ok": true
+            },
+            {
+              "name": "test_B2_A4_extracts_exact_markdown_section",
+              "ok": true
+            },
+            {
+              "name": "test_B2_A4_knowledge_entries_remain_compact",
+              "ok": true
+            },
+            {
+              "name": "test_B2_A4_load_outputs_fragment_and_records_estimate",
+              "ok": true
+            },
+            {
+              "name": "test_B2_A4_load_without_args_follows_current_references",
+              "ok": true
+            },
+            {
+              "name": "test_B2_A4_switching_benchmark_drops_stale_benchmark_reference",
+              "ok": true
+            },
+            {
+              "name": "test_B2_A4_token_estimate_is_conservative_for_cjk",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "file": "C:\\Users\\zhaoyan\\workflow-agent\\tests\\heuristics-archive.test.ts",
+          "cases": [
+            {
+              "name": "test_heuristics_archive_uses_sequential_versions",
+              "ok": true
+            },
+            {
+              "name": "test_tool_requests_use_sequential_versions",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "file": "C:\\Users\\zhaoyan\\workflow-agent\\tests\\ledger-b1.test.ts",
+          "cases": [
+            {
+              "name": "test_B1_A1_parser_exposes_step_state",
+              "ok": true
+            },
+            {
+              "name": "test_B1_A2_suspend_next_resume_lifecycle",
+              "ok": true
+            },
+            {
+              "name": "test_B1_A3_current_limits_suspended_summary_without_losing_total",
+              "ok": true
+            },
+            {
+              "name": "test_B1_A4_compile_generates_real_versioned_archive_path",
+              "ok": true
+            },
+            {
+              "name": "test_B1_A4_history_has_structured_events",
+              "ok": true
+            },
+            {
+              "name": "test_B1_A4_invalid_draft_does_not_move_history",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "file": "C:\\Users\\zhaoyan\\workflow-agent\\tests\\lifecycle-b5.test.ts",
+          "cases": [
+            {
+              "name": "test_B5_A1_complete_task_lifecycle_through_cli",
+              "ok": true
+            },
+            {
+              "name": "test_B5_A2_task_ledgers_are_isolated_and_knowledge_is_shared",
+              "ok": true
+            },
+            {
+              "name": "test_B5_A3_verify_script_covers_current_repository_checks",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "file": "C:\\Users\\zhaoyan\\workflow-agent\\tests\\migration-b4.test.ts",
+          "cases": [
+            {
+              "name": "test_B4_A1_init_records_schema_and_template_fingerprints",
+              "ok": true
+            },
+            {
+              "name": "test_B4_A2_migrate_updates_managed_templates_and_preserves_custom_files",
+              "ok": true
+            },
+            {
+              "name": "test_B4_A3_rules_is_recoverably_archived",
+              "ok": true
+            },
+            {
+              "name": "test_B4_A4_failed_migration_leaves_original_workspace_unchanged",
+              "ok": true
+            },
+            {
+              "name": "test_B4_A4_migration_is_idempotent",
+              "ok": true
+            },
+            {
+              "name": "test_B4_A4_restore_rejects_paths_outside_workspace",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "file": "C:\\Users\\zhaoyan\\workflow-agent\\tests\\migration-v3-t3.test.ts",
+          "cases": [
+            {
+              "name": "test_B2_A1_migrate_archives_official_cocos_without_enabling_pack",
+              "ok": true
+            },
+            {
+              "name": "test_B2_A2_migrate_preserves_custom_cocos_and_pack_state",
+              "ok": true
+            },
+            {
+              "name": "test_B2_A3_migrate_inherits_old_candidates_and_archives",
+              "ok": true
+            },
+            {
+              "name": "test_B2_A3_schema_normalizes_pack_ids_without_losing_records",
+              "ok": true
+            },
+            {
+              "name": "test_B2_A4_init_and_task_new_reject_v2_without_partial_upgrade",
+              "ok": true
+            },
+            {
+              "name": "test_B2_A4_migrate_v3_is_idempotent",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "file": "C:\\Users\\zhaoyan\\workflow-agent\\tests\\packs-t3.test.ts",
+          "cases": [
+            {
+              "name": "test_B1_A1_core_registry_is_v5_and_excludes_pack_files",
+              "ok": true
+            },
+            {
+              "name": "test_B1_A1_init_has_only_general_templates",
+              "ok": true
+            },
+            {
+              "name": "test_B1_A2_enable_is_task_scoped_and_recorded",
+              "ok": true
+            },
+            {
+              "name": "test_B1_A3_enable_is_idempotent_and_disable_protects_custom_content",
+              "ok": true
+            },
+            {
+              "name": "test_B1_A4_pack_commands_require_initialized_current_schema",
+              "ok": true
+            },
+            {
+              "name": "test_B1_A4_pack_file_changes_roll_back_when_schema_write_fails",
+              "ok": true
+            },
+            {
+              "name": "test_B1_A4_unknown_pack_fails_without_workspace_changes",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "file": "C:\\Users\\zhaoyan\\workflow-agent\\tests\\scenario-separation-t3.test.ts",
+          "cases": [
+            {
+              "name": "test_B3_A3_core_and_cocos_scenarios_are_separated",
+              "ok": true
+            },
+            {
+              "name": "test_B3_A4_docs_explain_task_scoped_pack_commands",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "file": "C:\\Users\\zhaoyan\\workflow-agent\\tests\\verification-b3.test.ts",
+          "cases": [
+            {
+              "name": "test_B3_A1_coverage_matches_full_acceptance_id",
+              "ok": true
+            },
+            {
+              "name": "test_B3_A2_failed_test_is_not_reported_as_valid",
+              "ok": true
+            },
+            {
+              "name": "test_B3_A2_manual_result_completes_valid_evidence",
+              "ok": true
+            },
+            {
+              "name": "test_B3_A2_no_tests_persists_incomplete_evidence",
+              "ok": true
+            },
+            {
+              "name": "test_B3_A3_source_change_makes_evidence_stale",
+              "ok": true
+            },
+            {
+              "name": "test_B3_A4_accept_requires_valid_evidence_or_explicit_override",
+              "ok": true
+            },
+            {
+              "name": "test_B3_A4_valid_accept_marks_acceptance_and_done",
+              "ok": true
+            }
+          ]
+        }
+      ],
+      "total": 59,
+      "passed": 59,
+      "failed": 0,
+      "emptyFiles": [],
+      "interrupted": false
+    },
+    "acceptance": {
+      "B2-A1": {
+        "tests": [
+          "C:\\Users\\zhaoyan\\workflow-agent\\tests\\approval-delegation-t5.test.ts::test_B2_A1_v3_migration_keeps_workflow_and_adds_optional_context",
+          "C:\\Users\\zhaoyan\\workflow-agent\\tests\\context-b2.test.ts::test_B2_A1_init_uses_layered_prompts_without_rules",
+          "C:\\Users\\zhaoyan\\workflow-agent\\tests\\migration-v3-t3.test.ts::test_B2_A1_migrate_archives_official_cocos_without_enabling_pack"
+        ],
+        "passed": true
+      },
+      "B2-A2": {
+        "tests": [
+          "C:\\Users\\zhaoyan\\workflow-agent\\tests\\approval-delegation-t5.test.ts::test_B2_A2_v3_migration_preserves_authority_and_custom_workflow",
+          "C:\\Users\\zhaoyan\\workflow-agent\\tests\\context-b2.test.ts::test_B2_A2_init_has_no_example_benchmark_or_smoke_test",
+          "C:\\Users\\zhaoyan\\workflow-agent\\tests\\migration-v3-t3.test.ts::test_B2_A2_migrate_preserves_custom_cocos_and_pack_state"
+        ],
+        "passed": true
+      },
+      "B2-A3": {
+        "tests": [
+          "C:\\Users\\zhaoyan\\workflow-agent\\tests\\approval-delegation-t5.test.ts::test_B2_A3_verify_script_covers_template_migration_changes",
+          "C:\\Users\\zhaoyan\\workflow-agent\\tests\\context-b2.test.ts::test_B2_A3_general_and_cocos_design_templates_are_independent",
+          "C:\\Users\\zhaoyan\\workflow-agent\\tests\\migration-v3-t3.test.ts::test_B2_A3_migrate_inherits_old_candidates_and_archives",
+          "C:\\Users\\zhaoyan\\workflow-agent\\tests\\migration-v3-t3.test.ts::test_B2_A3_schema_normalizes_pack_ids_without_losing_records"
+        ],
+        "passed": true
+      }
+    }
+  },
+  "manual": {},
+  "fingerprint": {
+    "algorithm": "sha256",
+    "digest": "f8963734d7fa0ef58157449949338965b9c40778b97aebb2106444f661e27814",
+    "files": [
+      "C:\\Users\\zhaoyan\\workflow-agent\\src\\cli.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\src\\commands\\heuristics.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\src\\commands\\knowledge.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\src\\commands\\ledger.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\src\\commands\\pack.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\src\\commands\\test.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\src\\commands\\tool.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\src\\core\\benchmarks.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\src\\core\\callgraph.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\src\\core\\context.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\src\\core\\current.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\src\\core\\fs.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\src\\core\\hash.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\src\\core\\history.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\src\\core\\markdown.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\src\\core\\migration.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\src\\core\\packs.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\src\\core\\snapshot-schema.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\src\\core\\templates.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\src\\core\\test-config.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\src\\core\\test-runner.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\src\\core\\verification.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\src\\core\\workspace-schema.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\src\\core\\workspace.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\tests\\approval-delegation-t5.test.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\tests\\context-b2.test.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\tests\\helpers\\cli.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\tests\\heuristics-archive.test.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\tests\\ledger-b1.test.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\tests\\lifecycle-b5.test.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\tests\\migration-b4.test.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\tests\\migration-v3-t3.test.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\tests\\packs-t3.test.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\tests\\run.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\tests\\scenario-separation-t3.test.ts",
+      "C:\\Users\\zhaoyan\\workflow-agent\\tests\\verification-b3.test.ts"
+    ]
+  },
+  "checkedAt": "2026-08-21T07:15:39.519Z"
+}

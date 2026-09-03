@@ -1,0 +1,11 @@
+{
+  "id": "B3-S3",
+  "title": "运行影响测试、仓库全量测试与 `verify-demo.bat` 并检查实际输出",
+  "reference": "ledger/work-items/B3-S3.md",
+  "phase": "done",
+  "hold": null,
+  "documentDigest": "46d63cdeb6426b5c8c6338469105c83363b6658eff8038fc211beb39076e6f69",
+  "benchmarks": [
+    "B3"
+  ]
+}

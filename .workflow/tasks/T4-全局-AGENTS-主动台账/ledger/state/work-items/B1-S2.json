@@ -1,0 +1,11 @@
+{
+  "id": "B1-S2",
+  "title": "检查实际文件内容及 override 状态",
+  "reference": "ledger/work-items/B1-S2.md",
+  "phase": "pending",
+  "hold": null,
+  "documentDigest": "fcf77d79823e48cb852c33defb8e928de7e7f193dc524dae5c0811d1cfcae225",
+  "benchmarks": [
+    "B1"
+  ]
+}

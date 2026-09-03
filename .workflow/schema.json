@@ -1,0 +1,143 @@
+{
+  "structureVersion": 10,
+  "templateVersion": 10,
+  "templateFingerprints": {
+    "discussion/workflow.md": "3c7003e6a5ec4339c9caa5bb8c9f79b6314557558b2e716b1290ac2e57505346",
+    "discussion/delegated-approval.md": "90b5b9c961d3ea488026e1c7378b0391571c47bede66b9214cdc6986307f0681",
+    "discussion/context.md": "cc45bcd057112b8ab977f7dd0f54e27d233c0ef69d33af54ae3762aa5d770062",
+    "discussion/operation-log.md": "8e9f46d506efccd43fee3bbb90dc2bb26b34567f5a48e99599224b907737978f",
+    "heuristics/strategy.md": "fb12cbb91854994bae152178ad56ba5c5a94ba6a28e66de65024b6c8a4dd03d4",
+    "heuristics/learnings.md": "214f0592146010213e03ccfcdb3f09bff79f6688aee89a28eac2f7d863c81884",
+    "knowledge/index.md": "50c715abaf84e427c816627291cbfb76aa3a4433df571a7df70306003edaed0b",
+    "knowledge/audit.md": "a10725f631b134eb7dd1d92f4c2e3a5c016920bebf3cdd07177ebaded07d098a",
+    "tools/ts-test-runner.md": "eaa05a3d592a30996988fc6ec25a47b522bec9ef4976f707e6e77ba97d552e21",
+    "tools/registry.md": "fc53780b772fafd2687de770a2cce61d5e3fec3f89b5a0e5279ce2c287d43bbb",
+    "tests/config.json": "fb2d55dfaf7430563f2c78ebedba210a4709407c1d40a8d2cebc3350a3dd2f9c",
+    "ledger/authority.md": "054f55483b0f7dffcd6343caa7c8494a876da1560bdcff503012497c98d06310",
+    "ledger/benchmarks.md": "5bf572b74985d37dbcd63bd8f6d8519ec469d3dd4aa50f925a3542edbba4a8d5",
+    "ledger/current.md": "e0628482a0a9ab2901631ba4de0d675317a06281bb9efebc58e52dd8e64943d8",
+    "ledger/audit.md": "d004d571382ddaaf2121a46439f955ed7c305f2f8f45e3cadc537302d84de89f",
+    "ledger/loads.md": "abab1760352df0f3d00d0cd800e34b70e12ad3783fd712afd1c0bdb4f67206f1",
+    "ledger/history/README.md": "146cfee8f8eb860690b5c9b0b4e27ddfec418847608dcb34b33511a08045e50f",
+    "ledger/snapshots/README.md": "b38e607a0726b6951ad0d2f32e3b2301fe347f1ffa4483e3b3dbf9d9f553cf03",
+    "ledger/snapshots/template-draft.json": "e661c95ad1c851cce149ce61ed199de8283c0f45cb4369b26993c2e02da2db1c",
+    "ledger/raw/README.md": "70b7f46d1d81f8247284851ad95e61f219c3669720b04b29f03430a5e8a801e7",
+    "ledger/designs/README.md": "638ada6eae02d1f68f86bf049aa89f3fbd4a7117ff89631be8a6aec0d6d2dff7",
+    "ledger/designs/template-general.md": "dd89895a1193392ad2f314036b5b30448a1672325e5bd36310d04bfa75440135",
+    "ledger/verification/README.md": "0b7b162b8579611d7d829f189795bcaab2110c4c5dbb2f595be967adbf79990c",
+    "ledger/benchmarks/README.md": "1a958efa490e8ef12c2a547074d12749eb17ec4679c1ac85810b70a02d3f1301",
+    "ledger/work-items/README.md": "c2a4078b163324dc82c6b79732dc84d8283401dcaf404d622880f4bb1792ef01",
+    "ledger/state/README.md": "34afd56d642296a6a1263a89fcdc80aaa6954c23317de2d6d338a088af03ea84",
+    "ledger/machine-events/README.md": "987a4ec712e93173d81b190a216c624504a00d25f538ff89a29cdad808b38549"
+  },
+  "candidates": [
+    {
+      "originalPath": "tasks/T1-默认/ledger/designs/template-general.md",
+      "candidatePath": "migration/candidates/v10/tasks/T1-默认/ledger/designs/template-general.md",
+      "templateVersion": 10
+    },
+    {
+      "originalPath": "tasks/T2-提示词系统重构/ledger/designs/template-general.md",
+      "candidatePath": "migration/candidates/v10/tasks/T2-提示词系统重构/ledger/designs/template-general.md",
+      "templateVersion": 10
+    },
+    {
+      "originalPath": "tasks/T3-特化内容解耦/ledger/designs/template-general.md",
+      "candidatePath": "migration/candidates/v10/tasks/T3-特化内容解耦/ledger/designs/template-general.md",
+      "templateVersion": 10
+    },
+    {
+      "originalPath": "tasks/T4-全局-AGENTS-主动台账/ledger/designs/template-general.md",
+      "candidatePath": "migration/candidates/v10/tasks/T4-全局-AGENTS-主动台账/ledger/designs/template-general.md",
+      "templateVersion": 10
+    },
+    {
+      "originalPath": "tasks/T5-AI自主审批委托/ledger/designs/template-general.md",
+      "candidatePath": "migration/candidates/v10/tasks/T5-AI自主审批委托/ledger/designs/template-general.md",
+      "templateVersion": 10
+    },
+    {
+      "originalPath": "tasks/T6-统一状态迁移入口/ledger/designs/template-general.md",
+      "candidatePath": "migration/candidates/v10/tasks/T6-统一状态迁移入口/ledger/designs/template-general.md",
+      "templateVersion": 10
+    },
+    {
+      "originalPath": "tasks/T7-普通Benchmark状态机与只读LLM/ledger/designs/template-general.md",
+      "candidatePath": "migration/candidates/v10/tasks/T7-普通Benchmark状态机与只读LLM/ledger/designs/template-general.md",
+      "templateVersion": 10
+    },
+    {
+      "originalPath": "tasks/T8-help/ledger/designs/template-general.md",
+      "candidatePath": "migration/candidates/v10/tasks/T8-help/ledger/designs/template-general.md",
+      "templateVersion": 10
+    }
+  ],
+  "archives": [
+    {
+      "originalPath": "discussion/rules.md",
+      "archivePath": "migration/archive/v1/discussion/rules.md",
+      "digest": "bef2a94192397906ddd02b4ec2163253bd3df40b1598fa177b62055519ed04da"
+    },
+    {
+      "originalPath": "tests/smoke.test.ts",
+      "archivePath": "migration/archive/v1/tests/smoke.test.ts",
+      "digest": "48bc86e1da9965e295627e95b19aaee957e5c49e0e44feac04778cf3ce84abab"
+    },
+    {
+      "originalPath": "tasks/T1-默认/ledger/snapshots/template.json",
+      "archivePath": "migration/archive/v1/tasks/T1-默认/ledger/snapshots/template.json",
+      "digest": "70f488f5c7093367e42da016ab20bee5cf667f83ecafee9f0c356ea3030633d9"
+    },
+    {
+      "originalPath": "tasks/T2-提示词系统重构/ledger/snapshots/template.json",
+      "archivePath": "migration/archive/v1/tasks/T2-提示词系统重构/ledger/snapshots/template.json",
+      "digest": "70f488f5c7093367e42da016ab20bee5cf667f83ecafee9f0c356ea3030633d9"
+    },
+    {
+      "originalPath": "tasks/T1-默认/ledger/designs/template-cocos-scene.md",
+      "archivePath": "migration/archive/v2/tasks/T1-默认/ledger/designs/template-cocos-scene.md",
+      "digest": "ea30c035c3afc84e2e6b5897fcce707719c38a3cf3233f6bc9ce8a3223205b2f"
+    },
+    {
+      "originalPath": "tasks/T2-提示词系统重构/ledger/designs/template-cocos-scene.md",
+      "archivePath": "migration/archive/v2/tasks/T2-提示词系统重构/ledger/designs/template-cocos-scene.md",
+      "digest": "ea30c035c3afc84e2e6b5897fcce707719c38a3cf3233f6bc9ce8a3223205b2f"
+    },
+    {
+      "originalPath": "tasks/T3-特化内容解耦/ledger/designs/template-cocos-scene.md",
+      "archivePath": "migration/archive/v2/tasks/T3-特化内容解耦/ledger/designs/template-cocos-scene.md",
+      "digest": "ea30c035c3afc84e2e6b5897fcce707719c38a3cf3233f6bc9ce8a3223205b2f"
+    },
+    {
+      "originalPath": "tasks/T1-默认/ledger/benchmarks.md",
+      "archivePath": "migration/archive/v7/tasks/T1-默认/ledger/benchmarks.md",
+      "digest": "fc6f39349a67fa2b2cd2be375f62e7440e378c5d0e181060dc4f8856dd0e6094"
+    },
+    {
+      "originalPath": "tasks/T2-提示词系统重构/ledger/benchmarks.md",
+      "archivePath": "migration/archive/v7/tasks/T2-提示词系统重构/ledger/benchmarks.md",
+      "digest": "bd15842cd5666a4541cb5408ca84caa9fd697f50996d45e7039316aa84ffdffd"
+    },
+    {
+      "originalPath": "tasks/T3-特化内容解耦/ledger/benchmarks.md",
+      "archivePath": "migration/archive/v7/tasks/T3-特化内容解耦/ledger/benchmarks.md",
+      "digest": "284524faab645fff6c7c88988c73379d9d23ec5f91eae96e879370139a2291a6"
+    },
+    {
+      "originalPath": "tasks/T4-全局-AGENTS-主动台账/ledger/benchmarks.md",
+      "archivePath": "migration/archive/v7/tasks/T4-全局-AGENTS-主动台账/ledger/benchmarks.md",
+      "digest": "661376abe830e11e4f01399a1cb3fcc12a6390c50fc7cd1148836dca15e62c5c"
+    },
+    {
+      "originalPath": "tasks/T5-AI自主审批委托/ledger/benchmarks.md",
+      "archivePath": "migration/archive/v7/tasks/T5-AI自主审批委托/ledger/benchmarks.md",
+      "digest": "1a0b099e06e125f0e0edf381a7205575d777ae35a0fb20a42bf6247fa1a9c175"
+    },
+    {
+      "originalPath": "tasks/T7-普通Benchmark状态机与只读LLM/ledger/benchmarks.md",
+      "archivePath": "migration/archive/v7/tasks/T7-普通Benchmark状态机与只读LLM/ledger/benchmarks.md",
+      "digest": "6ee7d3ef09b1d4b9c49469028f329c73b7b3d7f65509f30ca9794880803816b3"
+    }
+  ],
+  "taskPacks": {}
+}

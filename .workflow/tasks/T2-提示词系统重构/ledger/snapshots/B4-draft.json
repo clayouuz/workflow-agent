@@ -1,0 +1,18 @@
+{
+  "benchmarkId": "B4",
+  "stillBinding": [
+    "工作区根部 schema.json 保存结构版本、模板版本和当前模板内容指纹",
+    "未修改的旧受管模板可自动升级；状态文件和用户自定义文件不被覆盖",
+    "自定义受管文件保留原件，新版内容写入 migration/candidates/v<版本>/ 对应路径",
+    "废弃文件移入 migration/archive/v<旧版本>/ 并记录原路径、归档路径和内容指纹，可显式恢复",
+    "迁移在工作区副本中完成和校验，再通过同目录交换提交；失败不会留下半迁移状态",
+    "已是当前版本的工作区重复迁移不修改清单、候选或归档"
+  ],
+  "superseded": [
+    {
+      "old": "ledger init 只补齐缺失文件，无法判断旧模板、自定义内容或废弃文件",
+      "replacedBy": "新工作区由 init 写入结构清单；无清单的旧工作区通过 ledger migrate 显式升级"
+    }
+  ],
+  "contextualArchived": 4
+}

@@ -1,0 +1,22 @@
+{
+  "benchmarkId": "B3",
+  "stillBinding": [
+    "验证证据使用 valid、failed、stale、incomplete 四种状态，缺失、失败或过期都不算通过",
+    "自动测试按完整验收项 ID 建立覆盖关系，人工项通过 test manual 记录结果",
+    "证据保存实际执行结果与源码、测试内容指纹，验收前可重新检查是否过期",
+    "ledger accept 默认只接受 valid 证据，显式 override 必须记录原因并且不伪造验收项勾选",
+    "无法自动验证的验收项必须提供清晰的用户自测流程并记录结果"
+  ],
+  "superseded": [
+    {
+      "old": "仅以测试命令退出码或 benchmark 名称判断验收通过",
+      "replacedBy": "保存验收项级证据、内容指纹与人工结果，并由验证状态统一决定是否可验收"
+    }
+  ],
+  "contextualArchived": 3,
+  "compiledAt": "2026-08-20",
+  "sourceEvents": {
+    "historyFile": "history/B3.md",
+    "archive": "history/archive/B3-v001.md"
+  }
+}
