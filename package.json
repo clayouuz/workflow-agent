@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "为 Agent 会话装配精确、精简、可恢复的项目上下文",
+  "description": "管理复杂任务的工作流项目。",
   "scripts": {
     "ledger": "node src/cli.ts ledger",
     "heuristics": "node src/cli.ts heuristics",

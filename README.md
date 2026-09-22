@@ -63,7 +63,14 @@ Benchmark 描述什么结果算完成，Work Item 描述需要执行的工作。
 
 ### 领域 Pack
 
-通过 `ledger pack list/enable/disable` 按任务启用领域特化内容，例如 Cocos 场景设计模板。Pack 只作用于当前任务，不会自动扩散到其他任务。
+Pack 用于目标、方案和验收方式的讨论。Agent 根据当前讨论判断相关性，通过 `ledger pack list/enable/disable` 按任务管理领域材料，显式读取所需指南或模板，将结论写入任务设计供用户确认。实施阶段依据已确认设计，约束变化时再回到讨论。
+
+Pack 只作用于当前任务，不会自动扩散到其他任务；启用只安装文件，不代表内容已读取或讨论已完成。具体流程见工作区的 `discussion/workflow.md#讨论中的领域扩展包`。
+
+- `cocos`：Cocos Creator 场景、Prefab、组件与资源设计模板；
+- `game-architecture`：在游戏架构讨论阶段，从玩家体验和表现压力出发比较候选架构，明确状态所有权、表现契约、生命周期、模块边界和代表性端到端纵切，形成待用户确认的最终架构。
+
+两个 Pack 可以按任务组合启用。`game-architecture` 不补全玩法设计，也不接管 Benchmark、实施进度或 Git 等流程管理。
 
 ### 迁移与恢复
 
@@ -112,5 +119,5 @@ Benchmark 描述什么结果算完成，Work Item 描述需要执行的工作。
 
 - [SKILL.md](SKILL.md)：项目级工作流入口和约束；
 - [docs/cli-commands.md](docs/cli-commands.md)：完整 CLI 命令说明；
-- [templates/v10](templates/v10)：当前工作区模板；
+- [templates/v12](templates/v12)：当前工作区模板；
 - [tests](tests)：项目自测和行为场景。

@@ -38,8 +38,8 @@ export async function test_B4_A1_init_records_schema_and_template_fingerprints()
   try {
     await ws.run("ledger", "init");
     const schema = JSON.parse(await readFile(join(ws.workflow, "schema.json"), "utf8"));
-    assert.equal(schema.structureVersion, 10);
-    assert.equal(schema.templateVersion, 10);
+    assert.equal(schema.structureVersion, 12);
+    assert.equal(schema.templateVersion, 12);
     assert.match(schema.templateFingerprints["discussion/workflow.md"], /^[a-f0-9]{64}$/);
     assert.match(schema.templateFingerprints["ledger/designs/template-general.md"], /^[a-f0-9]{64}$/);
   } finally {
@@ -57,15 +57,15 @@ export async function test_B4_A2_migrate_updates_managed_templates_and_preserves
     assert.match(output, /迁移完成/);
     assert.equal(
       await readFile(join(ws.workflow, "discussion", "workflow.md"), "utf8"),
-      await template(9, "shared", "discussion/workflow.md"),
+      await template(12, "shared", "discussion/workflow.md"),
     );
     assert.equal(
       await readFile(join(ws.workflow, "discussion", "context.md"), "utf8"),
       "# 用户自定义上下文\n\n保留这一段。\n",
     );
     assert.equal(
-      await readFile(join(ws.workflow, "migration", "candidates", "v10", "discussion", "context.md"), "utf8"),
-      await template(9, "shared", "discussion/context.md"),
+      await readFile(join(ws.workflow, "migration", "candidates", "v12", "discussion", "context.md"), "utf8"),
+      await template(12, "shared", "discussion/context.md"),
     );
     assert.equal(await missing(join(ws.workflow, "discussion", "rules.md")), true);
     assert.equal(
@@ -74,7 +74,7 @@ export async function test_B4_A2_migrate_updates_managed_templates_and_preserves
     );
 
     const schema = JSON.parse(await readFile(join(ws.workflow, "schema.json"), "utf8"));
-    assert.equal(schema.structureVersion, 10);
+    assert.equal(schema.structureVersion, 12);
     assert.deepEqual(schema.archives[0].originalPath, "discussion/rules.md");
     assert.deepEqual(schema.archives[0].archivePath, "migration/archive/v1/discussion/rules.md");
 
@@ -111,14 +111,14 @@ export async function test_B4_A4_migration_is_idempotent() {
     await seedLegacyWorkspace(ws, true);
     await ws.run("ledger", "migrate");
     const beforeSchema = await readFile(join(ws.workflow, "schema.json"), "utf8");
-    const beforeCandidates = await readdir(join(ws.workflow, "migration", "candidates", "v10", "discussion"));
+    const beforeCandidates = await readdir(join(ws.workflow, "migration", "candidates", "v12", "discussion"));
 
     const output = await ws.run("ledger", "migrate");
 
     assert.match(output, /无需迁移/);
     assert.equal(await readFile(join(ws.workflow, "schema.json"), "utf8"), beforeSchema);
     assert.deepEqual(
-      await readdir(join(ws.workflow, "migration", "candidates", "v10", "discussion")),
+      await readdir(join(ws.workflow, "migration", "candidates", "v12", "discussion")),
       beforeCandidates,
     );
 
@@ -147,7 +147,7 @@ export async function test_B4_A4_failed_migration_leaves_original_workspace_unch
     await seedLegacyWorkspace(ws, true);
     const oldWorkflow = await readFile(join(ws.workflow, "discussion", "workflow.md"), "utf8");
     const oldRules = await readFile(join(ws.workflow, "discussion", "rules.md"), "utf8");
-    await mkdir(join(ws.workflow, "migration", "candidates", "v10", "discussion", "context.md"), {
+    await mkdir(join(ws.workflow, "migration", "candidates", "v12", "discussion", "context.md"), {
       recursive: true,
     });
 

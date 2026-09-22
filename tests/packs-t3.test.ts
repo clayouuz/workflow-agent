@@ -22,7 +22,7 @@ export async function test_B1_A1_init_has_only_general_templates() {
   try {
     await ws.run("ledger", "init");
     const schema = JSON.parse(await readFile(join(ws.workflow, "schema.json"), "utf8"));
-    assert.equal(schema.structureVersion, 10);
+    assert.equal(schema.structureVersion, 12);
     assert.deepEqual(schema.taskPacks, {});
     assert.equal(await missing(cocosTemplate(ws)), true);
     assert.equal(await readFile(join(ws.workflow, "tasks", "T1-默认", "ledger", "designs", "template-general.md"), "utf8") !== "", true);
@@ -31,8 +31,8 @@ export async function test_B1_A1_init_has_only_general_templates() {
   }
 }
 
-export async function test_B1_A1_core_registry_is_v10_and_excludes_pack_files() {
-    assert.equal(templateRegistry.every((entry) => /[\\/]templates[\\/]v10[\\/]/.test(entry.sourcePath)), true);
+export async function test_B1_A1_core_registry_is_v12_and_excludes_pack_files() {
+  assert.equal(templateRegistry.every((entry) => /[\\/]templates[\\/]v12[\\/]/.test(entry.sourcePath)), true);
   assert.equal(templateRegistry.some((entry) => /cocos/i.test(entry.relativePath)), false);
   assert.equal(packRegistry.some((pack) => pack.id === "cocos"), true);
 }

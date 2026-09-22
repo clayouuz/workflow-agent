@@ -106,11 +106,11 @@ async function seedV4DelegatedWorkspace(
 export async function test_B1_A1_regular_task_excludes_delegated_approval_context() {
   const ws = await createTestWorkspace();
   try {
-    assert.equal(CURRENT_SCHEMA_VERSION, 10);
+    assert.equal(CURRENT_SCHEMA_VERSION, 12);
     assert.match(readTemplate(DELEGATED_CONTEXT), /# 审批委托模式/);
     await ws.run("ledger", "init");
     const schema = JSON.parse(await readFile(join(ws.workflow, "schema.json"), "utf8"));
-    assert.equal(schema.structureVersion, 10);
+    assert.equal(schema.structureVersion, 12);
     assert.equal(await exists(join(ws.workflow, DELEGATED_CONTEXT)), true);
     const authority = await readFile(join(ws.workflow, "tasks/T1-默认/ledger/authority.md"), "utf8");
     assert.match(authority, /## 审批委托[\s\S]*状态：常规/);
@@ -157,11 +157,11 @@ export async function test_B2_A1_v3_migration_updates_workflow_and_adds_optional
     const seeded = await seedV3Workspace(ws);
     await ws.run("ledger", "migrate");
 
-    assert.equal(await readFile(join(ws.workflow, "discussion/workflow.md"), "utf8"), await template(9, "shared", "discussion/workflow.md"));
+    assert.equal(await readFile(join(ws.workflow, "discussion/workflow.md"), "utf8"), await template(12, "shared", "discussion/workflow.md"));
     assert.equal(await exists(join(ws.workflow, DELEGATED_CONTEXT)), true);
     assert.doesNotMatch(await ws.run("ledger", "load"), /# 审批委托模式/);
     const schema = JSON.parse(await readFile(join(ws.workflow, "schema.json"), "utf8"));
-    assert.equal(schema.structureVersion, 10);
+    assert.equal(schema.structureVersion, 12);
   } finally {
     await ws.cleanup();
   }
@@ -179,8 +179,8 @@ export async function test_B2_A2_v3_migration_preserves_authority_and_custom_wor
       seeded.authority,
     );
     assert.equal(
-      await readFile(join(ws.workflow, "migration/candidates/v10/discussion/workflow.md"), "utf8"),
-      await template(10, "shared", "discussion/workflow.md"),
+      await readFile(join(ws.workflow, "migration/candidates/v12/discussion/workflow.md"), "utf8"),
+      await template(12, "shared", "discussion/workflow.md"),
     );
   } finally {
     await ws.cleanup();
@@ -195,7 +195,7 @@ export async function test_B2_A3_verify_script_covers_template_migration_changes
 }
 
 export async function test_B3_A1_rules_require_task_specific_delegation_boundary() {
-  assert.equal(CURRENT_SCHEMA_VERSION, 10);
+  assert.equal(CURRENT_SCHEMA_VERSION, 12);
   const delegated = readTemplate(DELEGATED_CONTEXT);
   assert.match(delegated, /## 启用前的边界讨论/);
   assert.match(delegated, /自动审批范围/);
@@ -225,7 +225,7 @@ export async function test_B3_A3_v4_migration_preserves_delegated_task_state_and
     const seeded = await seedV4DelegatedWorkspace(ws);
     await ws.run("ledger", "migrate");
 
-    assert.equal(await readFile(join(ws.workflow, "discussion/workflow.md"), "utf8"), await template(9, "shared", "discussion/workflow.md"));
+    assert.equal(await readFile(join(ws.workflow, "discussion/workflow.md"), "utf8"), await template(12, "shared", "discussion/workflow.md"));
     assert.equal(
       await readFile(join(ws.workflow, "tasks/T1-默认/ledger/authority.md"), "utf8"),
       seeded.authority,
@@ -252,8 +252,8 @@ export async function test_B3_A3_v4_custom_delegated_rules_are_preserved_with_v8
 
     assert.equal(await readFile(join(ws.workflow, DELEGATED_CONTEXT), "utf8"), seeded.delegated);
     assert.equal(
-      await readFile(join(ws.workflow, "migration/candidates/v10", DELEGATED_CONTEXT), "utf8"),
-      await template(10, "shared", DELEGATED_CONTEXT),
+      await readFile(join(ws.workflow, "migration/candidates/v12", DELEGATED_CONTEXT), "utf8"),
+      await template(12, "shared", DELEGATED_CONTEXT),
     );
   } finally {
     await ws.cleanup();

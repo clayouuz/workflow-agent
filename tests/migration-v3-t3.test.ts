@@ -45,7 +45,7 @@ export async function test_B2_A1_migrate_archives_official_cocos_without_enablin
       await readFile(join(process.cwd(), "templates", "v2", "task", "ledger", "designs", "template-cocos-scene.md"), "utf8"),
     );
     const schema = JSON.parse(await readFile(join(ws.workflow, "schema.json"), "utf8"));
-    assert.equal(schema.structureVersion, 10);
+    assert.equal(schema.structureVersion, 12);
     assert.deepEqual(schema.taskPacks, {});
   } finally {
     await ws.cleanup();

@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
-export const CURRENT_SCHEMA_VERSION = 10;
+export const CURRENT_SCHEMA_VERSION = 12;
 
 export type TemplateScope = "shared" | "task";
 
@@ -26,6 +26,8 @@ const LEGACY_TEMPLATE_ROOTS: Record<number, string> = {
   7: join(REPO_ROOT, "templates", "v7"),
   8: join(REPO_ROOT, "templates", "v8"),
   9: join(REPO_ROOT, "templates", "v9"),
+  10: join(REPO_ROOT, "templates", "v10"),
+  11: join(REPO_ROOT, "templates", "v11"),
 };
 
 const sharedPaths = [
@@ -171,6 +173,10 @@ export const legacyManagedTemplateRegistry: TemplateEntry[] = [
   ...taskPaths.map((relativePath) => legacyEntry("task", relativePath, 8)),
   ...sharedPaths.map((relativePath) => legacyEntry("shared", relativePath, 9)),
   ...taskPaths.map((relativePath) => legacyEntry("task", relativePath, 9)),
+  ...sharedPaths.map((relativePath) => legacyEntry("shared", relativePath, 10)),
+  ...taskPaths.map((relativePath) => legacyEntry("task", relativePath, 10)),
+  ...sharedPaths.map((relativePath) => legacyEntry("shared", relativePath, 11)),
+  ...taskPaths.map((relativePath) => legacyEntry("task", relativePath, 11)),
 ];
 
 export const legacyCocosTemplateRegistry: TemplateEntry[] = [
@@ -201,6 +207,24 @@ export const packRegistry: TemplatePack[] = [
       scope: "task",
       managed: true,
     }],
+  },
+  {
+    id: "game-architecture",
+    description: "游戏架构讨论、候选比较、表现契约与最终决策模板",
+    entries: [
+      {
+        relativePath: "designs/game-architecture-guide.md",
+        sourcePath: join(TEMPLATE_ROOT, "packs", "game-architecture", "task", "ledger", "designs", "game-architecture-guide.md"),
+        scope: "task",
+        managed: true,
+      },
+      {
+        relativePath: "designs/template-game-architecture.md",
+        sourcePath: join(TEMPLATE_ROOT, "packs", "game-architecture", "task", "ledger", "designs", "template-game-architecture.md"),
+        scope: "task",
+        managed: true,
+      },
+    ],
   },
 ];
 

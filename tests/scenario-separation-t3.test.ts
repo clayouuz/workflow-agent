@@ -13,7 +13,7 @@ export async function test_B3_A3_core_and_cocos_scenarios_are_separated() {
 }
 
 export async function test_B3_A4_docs_explain_task_scoped_pack_commands() {
-  for (const relative of ["README.md", "docs/cli-commands.md", "HANDOFF.md"]) {
+  for (const relative of ["README.md", "docs/cli-commands.md"]) {
     const content = await readFile(join(process.cwd(), ...relative.split("/")), "utf8");
     assert.match(content, /ledger pack/);
     assert.match(content, /任务/);

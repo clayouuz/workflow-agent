@@ -189,8 +189,8 @@ export async function test_B1_A4_hot_rules_load_but_operation_records_remain_col
   try {
     await ws.run("ledger", "init");
     const schema = JSON.parse(await readFile(join(ws.workflow, "schema.json"), "utf8"));
-    assert.equal(schema.structureVersion, 10);
-    assert.equal(schema.templateVersion, 10);
+    assert.equal(schema.structureVersion, 12);
+    assert.equal(schema.templateVersion, 12);
 
     const firstLoad = await ws.run("ledger", "load");
     assert.match(firstLoad, /操作记录规则/);
@@ -209,19 +209,19 @@ export async function test_B1_A4_v6_migration_adds_hot_rules_and_preserves_custo
   try {
     await seedV6Workspace(ws, true);
     const output = await ws.run("ledger", "migrate");
-    assert.match(output, /v6 -> v10/);
+    assert.match(output, /v6 -> v12/);
     assert.equal(
       await readFile(join(ws.workflow, "discussion", "context.md"), "utf8"),
       "# 用户自定义上下文\n\n必须保留。\n",
     );
     assert.match(await readFile(join(ws.workflow, "discussion", "operation-log.md"), "utf8"), /操作记录规则/);
     assert.match(
-      await readFile(join(ws.workflow, "migration", "candidates", "v10", "discussion", "context.md"), "utf8"),
+      await readFile(join(ws.workflow, "migration", "candidates", "v12", "discussion", "context.md"), "utf8"),
       /operation-log\.md/,
     );
     const schema = JSON.parse(await readFile(join(ws.workflow, "schema.json"), "utf8"));
-    assert.equal(schema.structureVersion, 10);
-    assert.equal(schema.templateVersion, 10);
+    assert.equal(schema.structureVersion, 12);
+    assert.equal(schema.templateVersion, 12);
   } finally {
     await ws.cleanup();
   }

@@ -160,7 +160,7 @@ export async function test_B8_A4_v7_done_without_valid_verification_is_not_migra
   try {
     await seedV7(ws);
     const output = await ws.run("ledger", "migrate");
-    assert.match(output, /v7 -> v10/);
+    assert.match(output, /v7 -> v12/);
     assert.match(await ws.run("ledger", "benchmark", "status", "B7"), /verifying/);
     assert.match(await readFile(join(ws.workflow, "tasks/T1-默认/ledger/benchmarks/B7.md"), "utf8"), /旧完成项/);
     assert.match(await readFile(join(ws.workflow, "tasks/T1-默认/ledger/work-items/B7-S1.md"), "utf8"), /旧步骤/);

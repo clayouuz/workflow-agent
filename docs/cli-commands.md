@@ -62,7 +62,16 @@ node src/cli.ts help
 
 审批委托先讨论自动审批范围、不可自动审批事项、用户验收和重新讨论条件。边界确认后更新 authority 和规则引用，再用 `delegation enable` 建立状态机。完整设计路径依次记录 solution 和 code 的讨论与确认；简单任务使用 combined。设计内容变化会使旧确认失效。未委托任务不创建状态文件或加载委托规则；审批委托不能替代 `test manual` 证据或风险确认。
 
-特化包由 Agent 根据已明确的任务需要启用，CLI 不扫描关键词或猜测项目类型。当前内置 pack 为 `cocos`。
+特化包由 Agent 根据已明确的任务需要启用，CLI 不扫描关键词或猜测项目类型。当前内置 Pack：
+
+- `cocos`：Cocos Creator 场景、Prefab、组件与资源设计模板；
+- `game-architecture`：游戏架构讨论指南与决策模板，用于比较候选架构并敲定表现契约、状态所有权、生命周期、模块边界和端到端纵切。
+
+两个 Pack 可在同一任务的讨论中组合使用。讨论目标、方案或验收方式时，由 Agent 判断相关性，查看可用包并启用需要的包；Pack 文件不会自动进入上下文，须通过 `ledger load <引用>` 显式读取所需材料或章节。
+
+例如架构讨论时读取当前任务的 `ledger/designs/game-architecture-guide.md`，参考 `ledger/designs/template-game-architecture.md`；Cocos 场景方案与验收讨论时读取 `ledger/designs/template-cocos-scene.md`。保留包原件，将结论写入独立的任务设计。使用讨论状态机时，设计须含“目标”“具体方案”“验收方式”章节，通过 `ledger discussion discuss` 记录设计引用供确认与恢复。
+
+实施阶段依据已确认设计；需求或约束变化需要重新讨论时，再读取相关 Pack。Pack 不管理实施进度或 Git，也不替用户补全玩法设计。v11 工作区通过 `ledger migrate` 获取 v12 讨论规则；自定义文件会保留并生成候选，需审阅合并后才能应用新规则。
 
 ## test
 

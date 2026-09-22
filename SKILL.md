@@ -20,7 +20,7 @@ LLM 判断任务复杂时，使用 `ledger discussion` 状态机，依次明确�
 
 - 阶段切换或修改项目时读取 `discussion/workflow.md`。
 - 委托任务读取 `discussion/delegated-approval.md`。
-- 特定领域按需启用 Pack；完整命令使用 `--help`。
+- 讨论目标、方案或验收方式时，按 `discussion/workflow.md` 判断、启用并读取相关 Pack；将结论写入任务设计供用户确认，实施依据已确认设计。完整命令使用 `--help`。
 - 修改 workflow-agent 自身时读取 `MODIFICATION.md`。
 - 用户主动提出、确认、纠正或要求变更的内容默认记录到 Operation Log（`--actor user`）；Agent 结论使用 `--actor ai`；普通查询、机械编辑、重复命令和完整终端输出可跳过。
 
